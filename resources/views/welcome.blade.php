@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<x-layout>
+    <x-section>
+        <h1>Hewo One</h1>
+    </x-section>
+    <x-section>
+        <h1>Hewo Two</h1>
+    </x-section>
+    <x-section>
+        <h1>Hewo Three</h1>
+    </x-section>
 
-        <title>Laravel</title>
+    <x-flash type="warning">Opps, something went wrong</x-flash>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <x-flash class="mt-10">Yeeeeey</x-flash>
 
-        <style>
-            body {
-                font-family: 'Nunito';
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        
-    </body>
-</html>
+</x-layout>
