@@ -13,5 +13,11 @@
                 <button type="submit" class="bg-blue-400 text-white py-2 px-4 hover:bg-blue-500">Submit</button>
             </div>
         </x-form>
+
+        <form action="/comments/{{ $comment->id }}">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="bg-red-400 text-white p-2">Delete this post</button>
+        </form>
     </x-section>
 </x-layout>

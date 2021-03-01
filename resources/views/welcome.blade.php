@@ -13,4 +13,10 @@
 
     <x-flash class="mt-10">Yeeeeey</x-flash>
 
+    <x-modal title="Deactivate account">
+        <x-slot name="trigger">
+            <button @click="on = true">Show Modal</button>
+        </x-slot>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat magnam, quia excepturi ducimus tenetur nulla labore minus fugiat esse asperiores!
+    </x-modal>
 </x-layout>
